@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>
+   VSCodium/VSCode Extensions
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./_pagefind/pagefind-ui.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="./_pagefind/pagefind-ui.css">
+  <link rel="stylesheet" href="./css/almond.css">
+  <link rel="stylesheet" href="./css/eliogrieco.css">
+  <meta name="generator" content="soupault">
+ </head>
+ <body>
+  <script>
+   window.addEventListener('DOMContentLoaded', (event) => {
+      new PagefindUI({ element: "#search" });
+    });
+
+    // bind "Ctrl-option-f" to the search field: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/accesskey#sect1
+    window.onload = function () {
+      window.document.querySelector("#search form.pagefind-ui__form input.pagefind-ui__search-input").accessKey = "f";
+    };
+  </script>
+  <div id="sidebar">
+   <a href="/"><img class="logo" src="./img/CIS133 Coins mjf.jpg" alt="CIS133 mjf"></a>
+   <div id="site-index">
+    <ul class="toc">
+     <li>
+      <a href="/about">About</a>
+     </li>
+     <li>
+      <a href="/bio">About Me</a>
+     </li>
+     <li class="section_header">
+      talks
+     </li>
+     <ul class="toc">
+      <li>
+       <a href="/talks/clippy-the-maximizer">Clippy the Maximizer</a>
+      </li>
+     </ul>
+     <li class="section_header">
+      cis133da
+     </li>
+     <ul class="toc">
+      <li>
+       <a href="/cis133da/vscodium-extensions">VSCodium/VSCode Extensions</a>
+      </li>
+      <li>
+       <a href="/cis133da/start">Start</a>
+      </li>
+      <li>
+       <a href="/cis133da/free-resources">Free Resources</a>
+      </li>
+      <li>
+       <a href="/cis133da/css">CSS</a>
+      </li>
+      <li>
+       <a href="/cis133da/text-editors">Text Editors</a>
+      </li>
+      <li>
+       <a href="/cis133da/resources">Resources for CIS133DA</a>
+      </li>
+      <li>
+       <a href="/cis133da/setup">Setup</a>
+      </li>
+      <li>
+       <a href="/cis133da/validation-and-linting">Validation and Linting</a>
+      </li>
+      <li>
+       <a href="/cis133da/docs">Docs</a>
+      </li>
+     </ul>
+     <li class="section_header">
+      blockchain-and-cryptocurrencies
+     </li>
+     <ul class="toc">
+      <li>
+       <a href="/blockchain-and-cryptocurrencies/blockchain-and-cryptocurrencies">Blockchain and
+Cryptocurrencies</a>
+      </li>
+     </ul>
+     <li class="section_header">
+      web-design
+     </li>
+     <ul class="toc">
+      <li>
+       <a href="/web-design/css-resources">CSS Resources</a>
+      </li>
+      <li>
+       <a href="/web-design/additional-resources">Additional Resources</a>
+      </li>
+     </ul>
+     <li class="section_header">
+      Computer Science
+     </li>
+     <ul class="toc">
+      <li>
+       <a href="/Computer Science/IEEE 754 Floating Point Errors">IEEE 754 Floating Point
+Errors</a>
+      </li>
+     </ul>
+    </ul>
+   </div>
+  </div>
+  <div id="content-container">
+   <div id="search"></div>
+   <div id="generated-toc">
+    <ol class="toc">
+     <li>
+      <a href="#security-considerations">Security Considerations</a>
+     </li>
+     <li>
+      <a href="#essential-extensions">Essential Extensions</a>
+     </li>
+     <li>
+      <a href="#recommended-extensions">Recommended Extensions</a>
+     </li>
+     <li>
+      <a href="#worth-a-look">Worth a Look</a>
+      <ol class="toc">
+       <li>
+        <a href="#navigation-and-search">Navigation and Search</a>
+       </li>
+       <li>
+        <a href="#snippets">Snippets</a>
+       </li>
+       <li>
+        <a href="#spelling-and-autocomplete">Spelling and Autocomplete</a>
+       </li>
+       <li>
+        <a href="#debugging-and-linting">Debugging and Linting</a>
+       </li>
+       <li>
+        <a href="#text-manipulation">Text Manipulation</a>
+       </li>
+       <li>
+        <a href="#markdown">Markdown</a>
+       </li>
+       <li>
+        <a href="#git-and-github-integration">Git and GitHub Integration</a>
+       </li>
+       <li>
+        <a href="#text-viewing">Text Viewing</a>
+       </li>
+      </ol>
+     </li>
+    </ol>
+   </div>
+   <div id="content">
+    <h1 id="vscodiumvscode-extensions">
+     VSCodium/VSCode Extensions
+    </h1>
+    <p>
+     Extensions can change the way VSCodium/VSCode works and add new
+features that make it much easier to use.
+    </p>
+    <h2 id="security-considerations">
+     Security Considerations
+    </h2>
+    <p>
+     <strong>WARNING</strong>: Extensions are running code on your
+computer, thus there is a possibility that they could do damage. Don’t
+just carelessly install a ton of extensions. Take a look at each one and
+ask yourself:
+    </p>
+    <ol type="1">
+     <li>
+      Do I really need what this extension provides?
+     </li>
+     <li>
+      Does it look reputable? <strong>Are the docs complete and well written?</strong>
+     </li>
+     <li>
+      How many downloads does it have? Ideally a few thousand or more.
+     </li>
+     <li>
+      If you really want to be thorough, do a search on the broader
+internet or in security forums to see if there are any mentions of
+issues with this extension.
+     </li>
+    </ol>
+    <h2 id="essential-extensions">
+     Essential Extensions
+    </h2>
+    <p>
+     I strongly recommend that you install these extensions. They will
+help you catch errors in your HTML &amp; CSS as well as formatting your
+code properly. The live server will allow you to see the page you are
+working update in realtime.
+    </p>
+    <ul>
+     <li>
+      <strong>HTML-validate</strong> (<a href="https://open-vsx.org/?search=html-validate.vscode-html-validate">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=html-validate.vscode-html-validate">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      <strong>Stylelint</strong> (<a href="https://open-vsx.org/?search=stylelint.vscode-stylelint">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      <strong>Live Server</strong> (<a href="https://open-vsx.org/?search=ritwickdey.LiveServer">Open VSX</a>)
+(<a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      <strong>Prettier</strong> - Code formatter (<a href="https://open-vsx.org/?search=esbenp.prettier-vscode">Open VSX</a>)
+(<a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">MS
+VSCode Marketplace</a>)
+     </li>
+    </ul>
+    <h2 id="recommended-extensions">
+     Recommended Extensions
+    </h2>
+    <ul>
+     <li>
+      devdocs (<a href="https://open-vsx.org/?search=deibit.devdocs">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=deibit.devdocs">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      Auto Close Tag (<a href="https://open-vsx.org/?search=formulahendry.auto-close-tag">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      CSS Navigation (<a href="https://open-vsx.org/?search=pucelle.vscode-css-navigation">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=pucelle.vscode-css-navigation">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      Spell Right (<a href="https://open-vsx.org/?search=ban.spellright">Open VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=ban.spellright">MS
+VSCode Marketplace</a>)
+     </li>
+    </ul>
+    <h2 id="worth-a-look">
+     Worth a Look
+    </h2>
+    <p>
+     Some of the below extensions may have overlapping or duplicate
+functionality with the above extensions. I don’t necessarily recommend
+installing all of them, just the ones that are useful to you.
+    </p>
+    <h3 id="navigation-and-search">
+     Navigation and Search
+    </h3>
+    <ul>
+     <li>
+      Search: Find In Files With Selection (<a href="https://open-vsx.org/?search=kylpo.vscode-find-in-files-with-selection">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=kylpo.vscode-find-in-files-with-selection">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      Center Editor Window (<a href="https://open-vsx.org/?search=kaiwood.center-editor-window">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=kaiwood.center-editor-window">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      Block Travel (<a href="https://open-vsx.org/?search=sashaweiss.block-travel">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=sashaweiss.block-travel">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      Any Swap (<a href="https://open-vsx.org/?search=wolray.any-swap">Open VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=wolray.any-swap">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      Toggle Quotes (<a href="https://open-vsx.org/?search=BriteSnow.vscode-toggle-quotes">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=BriteSnow.vscode-toggle-quotes">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      Go To Method (<a href="https://open-vsx.org/?search=trixnz.go-to-method">Open VSX</a>)
+(<a href="https://marketplace.visualstudio.com/items?itemName=trixnz.go-to-method">MS
+VSCode Marketplace</a>)
+     </li>
+    </ul>
+    <h3 id="snippets">
+     Snippets
+    </h3>
+    <ul>
+     <li>
+      HTML Snippets (<a href="https://open-vsx.org/?search=abusaidm.html-snippets">Open VSX</a>)
+(<a href="https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      Snippets Ranger (<a href="https://open-vsx.org/?search=robole.snippets-ranger">Open VSX</a>)
+(<a href="https://marketplace.visualstudio.com/items?itemName=robole.snippets-ranger">MS
+VSCode Marketplace</a>)
+     </li>
+    </ul>
+    <h3 id="spelling-and-autocomplete">
+     Spelling and Autocomplete
+    </h3>
+    <ul>
+     <li>
+      Code Spell Checker (<a href="https://open-vsx.org/?search=streetsidesoftware.code-spell-checker">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      Vale (<a href="https://open-vsx.org/?search=errata-ai.vale-server">Open VSX</a>)
+(<a href="https://marketplace.visualstudio.com/items?itemName=errata-ai.vale-server">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      All Autocomplete (<a href="https://open-vsx.org/?search=Atishay-Jain.All-Autocomplete">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=Atishay-Jain.All-Autocomplete">MS
+VSCode Marketplace</a>)
+     </li>
+    </ul>
+    <h3 id="debugging-and-linting">
+     Debugging and Linting
+    </h3>
+    <ul>
+     <li>
+      Debugger for Firefox (<a href="https://open-vsx.org/?search=firefox-devtools.vscode-firefox-debug">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      ESLint (<a href="https://open-vsx.org/?search=dbaeumer.vscode-eslint">Open VSX</a>)
+(<a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      HTML / XML / RSS link checker (<a href="https://open-vsx.org/?search=BillDietrich.linkcheckerhtml">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=BillDietrich.linkcheckerhtml">MS
+VSCode Marketplace</a>)
+     </li>
+    </ul>
+    <h3 id="text-manipulation">
+     Text Manipulation
+    </h3>
+    <ul>
+     <li>
+      Sort Lines by Selection (<a href="https://open-vsx.org/?search=earshinov.sort-lines-by-selection">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=earshinov.sort-lines-by-selection">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      Increment Selection (<a href="https://open-vsx.org/?search=albymor.increment-selection">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=albymor.increment-selection">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      Simple Alignment (<a href="https://open-vsx.org/?search=earshinov.simple-alignment">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=earshinov.simple-alignment">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      Toggler (<a href="https://open-vsx.org/?search=hideoo.toggler">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=hideoo.toggler">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      Path Autocomplete (<a href="https://open-vsx.org/?search=ionutvmi.path-autocomplete">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      Render Line Endings (<a href="https://open-vsx.org/?search=medo64.render-crlf">Open VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=medo64.render-crlf">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      Text Power Tools (<a href="https://open-vsx.org/?search=qcz.text-power-tools">Open VSX</a>)
+(<a href="https://marketplace.visualstudio.com/items?itemName=qcz.text-power-tools">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      File Utils (<a href="https://open-vsx.org/?search=sleistner.vscode-fileutils">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=sleistner.vscode-fileutils">MS
+VSCode Marketplace</a>)
+     </li>
+    </ul>
+    <h3 id="markdown">
+     Markdown
+    </h3>
+    <ul>
+     <li>
+      Markdown All in One (<a href="https://open-vsx.org/?search=yzhang.markdown-all-in-one">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      markdownlint (<a href="https://open-vsx.org/?search=DavidAnson.vscode-markdownlint">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      Markdown Notes (<a href="https://open-vsx.org/?search=kortina.vscode-markdown-notes">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=kortina.vscode-markdown-notes">MS
+VSCode Marketplace</a>)
+     </li>
+    </ul>
+    <h3 id="git-and-github-integration">
+     Git and GitHub Integration
+    </h3>
+    <ul>
+     <li>
+      Git History (<a href="https://open-vsx.org/?search=donjayamanne.githistory">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      GitLens — Git supercharged (<a href="https://open-vsx.org/?search=eamodio.gitlens">Open VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      GitHub Theme (<a href="https://open-vsx.org/?search=GitHub.github-vscode-theme">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      GitHub Pull Requests and Issues (<a href="https://open-vsx.org/?search=GitHub.vscode-pull-request-github">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      Git Graph (<a href="https://open-vsx.org/?search=mhutchie.git-graph">Open VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph">MS
+VSCode Marketplace</a>)
+     </li>
+    </ul>
+    <h3 id="text-viewing">
+     Text Viewing
+    </h3>
+    <ul>
+     <li>
+      Todo Tree (<a href="https://open-vsx.org/?search=Gruntfuggly.todo-tree">Open VSX</a>)
+(<a href="https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      Better Comments (<a href="https://open-vsx.org/?search=aaron-bond.better-comments">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      Syntax Highlighter (<a href="https://open-vsx.org/?search=evgeniypeshkov.syntax-highlighter">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=evgeniypeshkov.syntax-highlighter">MS
+VSCode Marketplace</a>)
+     </li>
+     <li>
+      diff (<a href="https://open-vsx.org/?search=rafaelmaiolla.diff">Open
+VSX</a>) (<a href="https://marketplace.visualstudio.com/items?itemName=rafaelmaiolla.diff">MS
+VSCode Marketplace</a>)
+     </li>
+    </ul>
+   </div>
+  </div>
+ </body>
+</html>

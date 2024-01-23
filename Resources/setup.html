@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>
+   Setup 
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./_pagefind/pagefind-ui.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="./_pagefind/pagefind-ui.css">
+  <link rel="stylesheet" href="./css/almond.css">
+  <link rel="stylesheet" href="./css/eliogrieco.css">
+  <meta name="generator" content="soupault">
+ </head>
+ <body>
+  <script>
+   window.addEventListener('DOMContentLoaded', (event) => {
+      new PagefindUI({ element: "#search" });
+    });
+
+    // bind "Ctrl-option-f" to the search field: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/accesskey#sect1
+    window.onload = function () {
+      window.document.querySelector("#search form.pagefind-ui__form input.pagefind-ui__search-input").accessKey = "f";
+    };
+  </script>
+  <div id="sidebar">
+   <a href="/"><img class="logo" src="./img/CIS133 Coins mjf.jpg" alt="CIS133 mjf"></a>
+   <div id="site-index">
+    <ul class="toc">
+     <li>
+      <a href="/about">About</a>
+     </li>
+     <li>
+      <a href="/bio">About Me</a>
+     </li>
+     <li class="section_header">
+      talks
+     </li>
+     <ul class="toc">
+      <li>
+       <a href="/talks/clippy-the-maximizer">Clippy the Maximizer</a>
+      </li>
+     </ul>
+     <li class="section_header">
+      cis133da
+     </li>
+     <ul class="toc">
+      <li>
+       <a href="/cis133da/vscodium-extensions">VSCodium/VSCode Extensions</a>
+      </li>
+      <li>
+       <a href="/cis133da/start">Start</a>
+      </li>
+      <li>
+       <a href="/cis133da/free-resources">Free Resources</a>
+      </li>
+      <li>
+       <a href="/cis133da/css">CSS</a>
+      </li>
+      <li>
+       <a href="/cis133da/text-editors">Text Editors</a>
+      </li>
+      <li>
+       <a href="/cis133da/resources">Resources for CIS133DA</a>
+      </li>
+      <li>
+       <a href="/cis133da/setup">Setup</a>
+      </li>
+      <li>
+       <a href="/cis133da/validation-and-linting">Validation and Linting</a>
+      </li>
+      <li>
+       <a href="/cis133da/docs">Docs</a>
+      </li>
+     </ul>
+     <li class="section_header">
+      blockchain-and-cryptocurrencies
+     </li>
+     <ul class="toc">
+      <li>
+       <a href="/blockchain-and-cryptocurrencies/blockchain-and-cryptocurrencies">Blockchain and
+Cryptocurrencies</a>
+      </li>
+     </ul>
+     <li class="section_header">
+      web-design
+     </li>
+     <ul class="toc">
+      <li>
+       <a href="/web-design/css-resources">CSS Resources</a>
+      </li>
+      <li>
+       <a href="/web-design/additional-resources">Additional Resources</a>
+      </li>
+     </ul>
+     <li class="section_header">
+      Computer Science
+     </li>
+     <ul class="toc">
+      <li>
+       <a href="/Computer Science/IEEE 754 Floating Point Errors">IEEE 754 Floating Point
+Errors</a>
+      </li>
+     </ul>
+    </ul>
+   </div>
+  </div>
+  <div id="content-container">
+   <div id="search"></div>
+   <div id="generated-toc">
+    <ol class="toc">
+     <li>
+      <a href="#git">Git</a>
+      <ol class="toc">
+       <li>
+        <a href="#why-use-git">Why Use Git?</a>
+       </li>
+       <li>
+        <a href="#create-a-github-account">Create a GitHub account</a>
+       </li>
+       <li>
+        <a href="#install-github-desktop">Install GitHub Desktop</a>
+       </li>
+      </ol>
+     </li>
+     <li>
+      <a href="#editors">Editors</a>
+     </li>
+     <li>
+      <a href="#text-editor-extensions">Text Editor Extensions</a>
+     </li>
+     <li>
+      <a href="#get-started">Get Started</a>
+     </li>
+    </ol>
+   </div>
+   <div id="content">
+    <h1 id="setup">
+     Setup
+    </h1>
+    <p>
+     Web development is a lot easier if you have good tooling. There are
+three main things we’ll want to install and setup:
+    </p>
+    <ol type="1">
+     <li>
+      Git (version control)
+     </li>
+     <li>
+      Text Editor
+     </li>
+     <li>
+      Text Editor Extensions
+     </li>
+     <li>
+      Get Started
+     </li>
+    </ol>
+    <h2 id="git">
+     Git
+    </h2>
+    <p>
+     Git is a version control system. It keeps track of one or more files
+and exactly how they look at a point it time i.e.&nbsp;when you commit them.
+As you make changes, this allows you to move backward and forward in
+time, think Microsoft Word’s “track changes” but much, much more
+powerful.
+    </p>
+    <h3 id="why-use-git">
+     Why Use Git?
+    </h3>
+    <p>
+     I addition to letting you recover old changes, restore deleted files,
+and try out alternate approaches on your site, git allows you to share
+your changes with other people. It also allows you to receive changes
+they have made to those files easily, and move forward with those
+changes and merge them into your repository if you choose.
+    </p>
+    <h3 id="create-a-github-account">
+     Create a GitHub account
+    </h3>
+    <p>
+     <a href="https://github.com/signup?user_email">Sign up for
+GitHub</a>. The only information that you need to provide is your
+<strong>email</strong> and a <strong>new password for GitHub</strong>.
+When you see a wall of survey questions, just scroll to the bottom and
+continue without answering.
+    </p>
+    <h3 id="install-github-desktop">
+     Install GitHub Desktop
+    </h3>
+    <p>
+     Download and install <a href="https://desktop.github.com/">GitHub
+Desktop</a>. While you can use GitHub completely from the website,
+GitHub Desktop will make using Git from your computer a lot easier.
+    </p>
+    <h2 id="editors">
+     Editors
+    </h2>
+    <p>
+     Install <a href="https://vscodium.com/">VSCodium</a>. If you are not
+using a package manager, go to the <a href="https://github.com/VSCodium/vscodium/releases">VSCodium
+Releases</a> page and:
+    </p>
+    <ul>
+     <li>
+      If you are on <strong>Mac</strong> download <a href="https://github.com/VSCodium/vscodium/releases/download/1.85.2.24019/VSCodiumUserSetup-x64-1.85.2.24019.zip">VSCodiumUserSetup-x64-1.85.2.24019.zip</a> for older Intel machines, or <a href="https://github.com/VSCodium/vscodium/releases/download/1.72.2.22289/VSCodiumUserSetup-x64-1.85.2.24019.zip">VSCodiumUserSetup-x64-1.85.2.24019.zip</a>
+for newer M series machines.
+     </li>
+     <li>
+      If you are on <strong>Windows</strong> download <a href="https://github.com/VSCodium/vscodium/releases/download/1.85.2.24019/VSCodiumUserSetup-x64-1.85.2.24019.exe">VSCodium-darwin-x64-1.85.2.24019.exe</a>
+     </li>
+    </ul>
+    <h2 id="text-editor-extensions">
+     Text Editor Extensions
+    </h2>
+    <p>
+     You might want to install a few <a href="./vscodium-extensions.html">extensions</a> to teach your text editor a few new tricks and make it easier to use.
+    </p>
+    <h2 id="get-started">
+     Get Started
+    </h2>
+    <p>
+     Once you have the above setup, you’re ready to <a href="./start.html">get started</a>.
+    </p>
+   </div>
+  </div>
+ </body>
+</html>
