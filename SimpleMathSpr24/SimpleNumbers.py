@@ -75,8 +75,10 @@ if(div2):
     last_char = temp[-1]
     if(last_char in ("0", "2", "4", "6", "8")):
         print("evenly divisible by 4")
+        div4 = True
     else:
         print("NOT divisible by 4")
+        div4 = False
 
 
 # algorithm 2 last character is binary 0 (bit &); bit shift by 1 (>>); last character is binary 0 (bit &)
@@ -91,10 +93,22 @@ if( div2 ):
 
 # algorithm 3 last TWO characters are binary 00 (bit &)
 # not(number_string & 1100)
+if(not(int(last_char) & 11)):  
+    print("evenly divisible by 4")
+else:
+    print("NOT divisible by 4")
 
 ####################################################
 # Divisible by 5
 # algorithm 1 last character is "5" or "0"
+last_char = number_string[-1]
+print(last_char)
+if(last_char in ("0", "5")):
+    print("evenly divisible by 5")
+    div2 = True
+else:
+    print("NOT divisible by 5")
+    div2 = False
 
 ####################################################
 # Divisible by 6
@@ -103,17 +117,33 @@ if (div2 and div3):
     print("evenly divisible by 6")
 else:
     print("NOT divisible by 6")
+    
+
 
 ####################################################
 # Divisible by 8
-# algorithm 1 last character is 0, 2, 4, 6, 8; divide by 2; repeat; divide by 2; repeat
+# algorithm 1 last character is 0, 2, 4, 6, 8; divide by 2; repeat; 
+#            divide by 2 (Done already div4); repeat
+if(div4):
+    temp_int = int(number_string) // 2   # integer division
+    temp = str(temp_int)
+    last_char = temp[-1]
+    if(last_char in ("0", "2", "4", "6", "8")):
+        print("evenly divisible by 8")
+        div8 = True
+    else:
+        print("NOT divisible by 8")
+        div8 = False
 
 # algorithm 2 last character is binary 0 (bit &); bit shift by 1 (>>); 
 #             last character is binary 0 (bit &); bit shift by 1 (>>); 
 #             last character is binary 0 (bit &)
 
 # algorithm 3 last THREE characters are binary 000 (bit &)
-
+if(not(int(last_char) & 111)):  
+    print("evenly divisible by 8")
+else:
+    print("NOT divisible by 8")
 
 ####################################################
 # Divisible by 9

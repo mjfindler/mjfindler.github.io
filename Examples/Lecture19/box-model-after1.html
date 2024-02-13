@@ -7,22 +7,25 @@
   <style>
 
     body {
+      margin: 0;        /* get rid of left and right default borders  1 */
+      padding: 0;
       background-color: gray;
     }
 
     #box {
       background-color: blue;
-
-
-
-
-
-
+      /* padding: 10px 10px 10px 10px;  /* padding: 10px;            2 */
+      padding: 10px 30px 10px 30px;/* padding: 10px;              */
+      /* border: 5px solid black; */
+      border: 20px solid black; /*                           3 */
+      /* margin: 10px;            */
+      margin: 40px;         /*                              4 */
+      width: 300px;
+     /* box-sizing: border-box;       /*                           5!*/
     }
 
     #content {
-      background-color: #90EE90;
-      /*green*/
+      background-color: #90EE90; /*green*/
     }
 
     h1 {
@@ -41,12 +44,13 @@
       Animi, perferendis.
     </div>
   </div>
+
+  
   <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore
     recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique.
     Animi, perferendis.
   </div>
-
-
+  
 </body>
 
 </html>

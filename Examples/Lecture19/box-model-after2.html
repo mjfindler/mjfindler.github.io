@@ -5,24 +5,29 @@
   <meta charset="utf-8">
   <title>The Box Model</title>
   <style>
+    * {
+      box-sizing: border-box;    /* Apply to ALL elements!!!  */
+                                /* new to CSS3! caniuse.com */
+    }
 
     body {
+      margin: 0;        
+      padding: 0;
       background-color: gray;
+     /* box-sizing: border-box;    /* Doesn't Work -- not inheritable  */
     }
 
     #box {
       background-color: blue;
-
-
-
-
-
-
+      padding: 10px 30px 10px 30px;
+      border: 20px solid black; 
+      margin: 40px;         
+      width: 300px;
+     /* box-sizing: border-box;    /* Want it on all boxes!  */
     }
 
     #content {
-      background-color: #90EE90;
-      /*green*/
+      background-color: #90EE90; /*green*/
     }
 
     h1 {
@@ -41,12 +46,13 @@
       Animi, perferendis.
     </div>
   </div>
+
+  
   <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore
     recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique.
     Animi, perferendis.
   </div>
-
-
+  
 </body>
 
 </html>
