@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Floating Elements</title>
+<style>
+
+div {
+  background-color: #00FFFF;
+}
+p {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+
+  /****************** 1 *********************/
+  float: left;
+  margin-right: 10px;   /* Div collapses because all P are moved out of doc flow */
+                        /* Fix by modifying section style                        */
+}
+
+#p1 {
+  background-color: #A52A2A;
+/****************** 1 *********************/
+  float: right;     /* jumps to right                                       */
+                    /* all other P move up -- P1 taken out of flow          */
+                    /* Margins collapsed for P2-P4, DO NOT collapse for P1! */
+                    /* Lightblue box shortened                              */
+                    /* REMOVE for 2                                         */
+}
+#p2 {
+  background-color: #DEB887;
+}
+#p3 {
+  background-color: #5F9EA0;
+/****************** 4 *********************/
+  float: left;
+}
+#p4 {
+  background-color: #FF7F50;
+}
+
+section {
+/****************** 3 *********************/
+  clear: left; /* opens lightblue box - nothing allowed to float to the left */
+}
+</style>
+</head>
+<body>
+<h1>Floating Elements</h1>
+
+<div>
+  <p id="p1"></p>
+  <p id="p2"></p>
+  <p id="p3"></p>
+  <p id="p4"></p>
+  <section>This is regular content continuing after the the paragraph boxes.</section>
+</div>
+
+
+</body>
+</html>
