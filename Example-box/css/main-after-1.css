@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Algerian;
+    src: url(../font/ALGER.TTF);
+}
+
+body { 
+    background-color: aliceblue;
+    font-size: 30px;
+/*    font-family: Algerian;  /* first */
+}
+
+.main-wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+
+table {      /* THIRD */
+    width: 100%;  
+}
+
+th {         /* SECOND */
+    font-weight: bold;
+}
