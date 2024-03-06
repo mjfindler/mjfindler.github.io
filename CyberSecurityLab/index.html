@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page" id="page1">
+        <iframe width="640" height="640" src="https://cybermap.kaspersky.com/en/widget/dynamic/dark" frameborder="0"></iframe>
+    </div>
+    <div class="page" id="page2">
+        <iframe width="640" height="640" src="img/BigG Solution.mp4" frameborder="0"></iframe>
+    </div>
+    <script>
+        const pages = document.querySelectorAll('.page');
+        let currentPage = 0;
+
+        function showPage(index) {
+            pages.forEach(page => page.style.display = 'none');
+            pages[index].style.display = 'block';
+        }
+
+        function transitionPage() {
+            showPage(currentPage);
+            currentPage = (currentPage + 1) % pages.length;
+            setTimeout(transitionPage, 60000) // 60 seconds
+        }
+
+        transitionPage();   // gets the ball rolling
+    </script>
+</body>
+</html>
