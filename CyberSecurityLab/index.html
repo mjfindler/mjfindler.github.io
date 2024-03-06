@@ -25,7 +25,7 @@
         function transitionPage() {
             showPage(currentPage);
             currentPage = (currentPage + 1) % pages.length;
-            setTimeout(transitionPage, 10000) // 10 seconds
+            setTimeout(transitionPage, 30000) // 30 seconds
         }
 
         transitionPage();   // gets the ball rolling
