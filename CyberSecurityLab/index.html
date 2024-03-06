@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GWCC ACS Lab</title>
 </head>
 <body>
+    <iframe width="640" height="640" src="https://cybermap.kaspersky.com/en/widget/dynamic/dark" frameborder="0"></iframe>
     <div class="page" id="page1">
         <iframe width="640" height="640" src="https://cybermap.kaspersky.com/en/widget/dynamic/dark" frameborder="0"></iframe>
     </div>
@@ -24,7 +25,7 @@
         function transitionPage() {
             showPage(currentPage);
             currentPage = (currentPage + 1) % pages.length;
-            setTimeout(transitionPage, 60000) // 60 seconds
+            setTimeout(transitionPage, 10000) // 10 seconds
         }
 
         transitionPage();   // gets the ball rolling
